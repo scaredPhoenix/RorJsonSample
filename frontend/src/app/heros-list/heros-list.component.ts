@@ -20,15 +20,7 @@ export class HerosListComponent {
                 this.heros = res.json();
                 this.length = this.heros.length;
                 this.heros.forEach(hero => {
-
-                    console.log('this.heros');
-                    console.log(hero);
-
-                    //var obj = JSON.parse(hero.attrs);
                     var obj = hero.attrs;
-
-                    
-
                     var heroAttr:any = {};
                     heroAttr.name = obj.name;
                     heroAttr.slug = obj.slug;
